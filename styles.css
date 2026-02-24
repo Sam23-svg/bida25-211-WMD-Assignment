@@ -1,7 +1,7 @@
 body{
     font-family: Arial, sans-serif;
 
-     color: #6788;
+     color: #667788;
      background-color: #f9f9f9;
      margin: 0;
      padding: 0;
@@ -71,4 +71,5 @@ main a[href ="malito:"] {
     color: #ff5722;
     font-weight: bold;
 }
+
 
