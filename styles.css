@@ -1,75 +1,159 @@
-body{
-    font-family: Arial, sans-serif;
 
-     color: #667788;
-     background-color: #f9f9f9;
-     margin: 0;
-     padding: 0;
-     line-height: 1.6;
+
+/* ===== Body & Global Styles ===== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #2c3e50;
+    background-color: #f1f3f6;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
 }
 
-header { 
-    background-color:#4CAF50;
-    color: white;
-    padding: 20px;
+/* ===== Header ===== */
+header {
+    background-color: #1a237e; /* dark navy */
+    color: #ffffff;
+    padding: 20px 0;
     text-align: center;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1);
 }
 
 header h1 {
     margin: 0;
+    font-size: 2rem;
+    letter-spacing: 1px;
 }
 
-nav a { 
-    color: white;
+/* ===== Navbar Links ===== */
+nav a, .navbar-brand {
+    color: #ffffff;
     text-decoration: none;
     margin: 0 10px;
+    font-weight: 500;
 }
 
-nav a :hover {
+nav a:hover, .navbar-brand:hover {
+    color: #ff9800; /* orange accent */
     text-decoration: underline;
 }
 
-main {
-    padding: 20px;
-    max-width: 800px;
-    margin: 0 auto;
+/* ===== Main Content ===== */
+main, .tab-pane, .container {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
- 
-main img {
+
+/* ===== Headings ===== */
+h2, h4, h5 {
+    color: #1a237e;
+    margin-bottom: 15px;
+}
+
+/* ===== Paragraphs ===== */
+p {
+    margin-bottom: 15px;
+}
+
+/* ===== Lists ===== */
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* ===== Tabs ===== */
+.nav-tabs .nav-link.active {
+    background-color: #3949ab;
+    color: #fff;
+    border-radius: 5px 5px 0 0;
+}
+
+.nav-tabs .nav-link {
+    color: #1a237e;
+}
+
+/* ===== Video Styling ===== */
+iframe, video {
+    width: 100%;
+    max-width: 100%;
+    border: 2px solid #1a237e;
+    border-radius: 8px;
+    margin-top: 15px;
+}
+
+/* ===== Images ===== */
+img {
     max-width: 100%;
     height: auto;
     display: block;
     margin: 20px 0;
+    border: 3px solid #3949ab;
+    border-radius: 8px;
 }
 
-footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10 px;
-    position: fixed;
-    bottom: 0;
+/* ===== Cards ===== */
+.card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+    margin-bottom: 30px;
+}
+
+/* ===== Forms ===== */
+input, select, textarea {
     width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
 }
 
-p {
-    color: #4CAF50;
+button, .btn {
+    background-color: #1a237e;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+button:hover, .btn:hover {
+    background-color: #3949ab;
+}
+
+/* ===== Footer ===== */
+footer {
+    background-color: #1a237e;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 50px;
+}
+
+/* ===== Links ===== */
+a {
+    color: #1a237e;
     text-decoration: none;
 }
 
 a:hover {
+    color: #ff9800;
     text-decoration: underline;
-
 }
 
-img border {
-    border: 5px solid #4CAF50;
-    border-radius: 10px;
-}
-
-main a[href ="malito:"] {
+/* ===== Mailto Links ===== */
+main a[href^="mailto:"] {
     color: #ff5722;
     font-weight: bold;
 }
-
-
