@@ -116,44 +116,6 @@
       <h3>Weekly Timetable</h3>
 <button onclick="toggleTable()">Show/Hide Time Table</button>
 
-<table id="timetable" border="1" style="display:none; margin-top:10px;">
-  <tr>
-    <th>Time</th>
-    <th>Mon</th>
-    <th>Tue</th>
-    <th>Wed</th>
-    <th>Thu</th>
-    <th>Fri</th>
-    <th>Sat</th>
-    <th>Sun</th>
-  </tr>
-
-  <!-- Morning with 15-min breaks -->
-  <tr><td>08:00 - 08:45 AM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-  <tr><td>08:45 - 09:00 AM (Break)</td><td colspan="7">Break</td></tr>
-  <tr><td>09:00 - 09:45 AM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-  <tr><td>09:45 - 10:00 AM (Break)</td><td colspan="7">Break</td></tr>
-  <tr><td>10:00 - 10:45 AM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-  <tr><td>10:45 - 11:00 AM (Break)</td><td colspan="7">Break</td></tr>
-  <tr><td>11:00 - 11:45 AM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-
-  <!-- Afternoon with 15-min breaks -->
-  <tr><td>12:00 - 12:45 PM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-  <tr><td>12:45 - 01:00 PM (Break)</td><td colspan="7">Break</td></tr>
-  <tr><td>01:00 - 01:45 PM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-  <tr><td>01:45 - 02:00 PM (Break)</td><td colspan="7">Break</td></tr>
-  <tr><td>02:00 - 02:45 PM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-  <tr><td>02:45 - 03:00 PM (Break)</td><td colspan="7">Break</td></tr>
-  <tr><td>03:00 - 03:45 PM</td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td><td contenteditable="true"></td></tr>
-</table>
-
-<script>
-// Toggle table visibility
-function toggleTable() {
-  const table = document.getElementById("timetable");
-  table.style.display = (table.style.display === "none") ? "table" : "none";
-}
-</script>
       <h3>Set a Time Reminder</h3>
 <label for="remindTime">Enter time (HH:MM, 24-hour): </label>
 <input type="time" id="remindTime">
@@ -204,6 +166,7 @@ function setReminder() {
 </body>
 
 <html>    
+
 
 
 
