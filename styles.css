@@ -158,4 +158,20 @@ main a[href^="mailto:"] {
     font-weight: bold;
 }
 
+table{
+width:100%;
+border-collapse:collapse;
+text-align:center;
+}
+
+th, td{
+padding:8px;
+}
+
+input{
+width:90%;
+border:none;
+outline:none;
+text-align:center;
+}
 
