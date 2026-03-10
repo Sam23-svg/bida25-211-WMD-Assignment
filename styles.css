@@ -4,7 +4,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #2c3e50;
-    background-color: #1b4332;
+    background-color: white;
     margin: 0;
     padding: 0;
     line-height: 1.6;
@@ -40,12 +40,11 @@ nav a:hover, .navbar-brand:hover {
 
 /* ===== Main Content ===== */
 main, .tab-pane, .container {
-    max-width: 900px;
-    margin: 30px auto;
-    padding: 25px;
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 40px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
 }
 
 /* ===== Headings ===== */
@@ -174,5 +173,6 @@ border:none;
 outline:none;
 text-align:center;
 }
+
 
 
