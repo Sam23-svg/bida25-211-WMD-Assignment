@@ -1,72 +1,63 @@
-<!DOCTYPE>
+<!DOCTYPE html>
 <html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Assignment Tracker - Tips</title>
 
-    <meta charset="UTF-8"
-    <meta name="viewport" content="width=device-width. initial-scale"
-    <!-- Bootstrap CSS --> 
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> 
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
- 
+<!-- Custom CSS -->
+<link rel="stylesheet" href="styles.css">
+
+<style>
+/* Optional styling */
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+#timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+#timetable th, #timetable td {
+    padding: 5px;
+    text-align: center;
+}
+</style>
 </head>
-
 <body>
-  <!-- NAVBAR -->
+
+<!-- NAVBAR (same as index.html) -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-<div class="container">
-
-<a class="navbar-brand" href="#">Assignment Tracker</a>
-
-<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="navbarNav">
-<ul class="navbar-nav">
-
-<li class="nav-item">
-<a class="nav-link" href="index.html">Home</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="tips.html">Tips</a>
-</li>
-
-<li class="nav-item">
-<a class="nav-link" href="add.html">Add</a>
-</li>
-
-</ul>
-</div>
-
-</div>
+  <div class="container">
+    <a class="navbar-brand" href="#">Assignment Tracker</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#navbarNav" aria-controls="navbarNav" 
+            aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="tips.html">Tips</a></li>
+        <li class="nav-item"><a class="nav-link" href="add.html">Add</a></li>
+      </ul>
+    </div>
+  </div>
 </nav>
-    
-</body>  
- 
-    <!-- Bootstrap JS and dependencies --> 
 
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script> 
+<!-- HEADER -->
+<header class="text-center my-4">
+  <h1>Powerful Study Tips</h1>
+  <p>Start early, stay consistent, finish strong</p>
+</header>
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <header>
-        <h1>Powerful Study Tips</h1>
-        <nav>
-        <div class="container"> 
+<!-- MAIN CONTENT -->
+<main class="container mt-5">
 
-            <a class="navbar-brand" href="index.html">Start early, stay consistent,finish strong</a> 
-
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"> 
-
-                <span class="navbar-toggler-icon"></span> 
-
-            </button> 
-
-    </header>
-    <main class="container mt-5">
-
+  <!-- Tabs -->
   <ul class="nav nav-tabs">
     <li class="nav-item">
       <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#plan">Planning</button>
@@ -80,177 +71,107 @@
   </ul>
 
   <div class="tab-content border p-4">
-
+    <!-- Planning Tab -->
     <div class="tab-pane fade show active" id="plan">
       <h4>Strategic Planning</h4>
       <p>
-         1.Choose on what you want to achieve academically.<br>
-           Example: Improve your Maths grade from 50% to 70%.<br><br>
-
+        1. Choose what you want to achieve academically.<br>
+        Example: Improve your Maths grade from 50% to 70%.<br><br>
         2. Set clear and realistic goals for the term or year.<br>
-           Example: Study 2 hours daily and complete all assignments on time.<br><br>
-
-       3. Create a study schedule and stick to it.<br>
-           Plan time for revision, homework, and group discussions.<br><br>
-
-       4. Monitor your progress regularly.<br>
-         Check your test results and adjust your study methods if needed.
-          
-        </p>
-          <img src="strategic palnning.webp" alt="Goal setting">
-        
+        Example: Study 2 hours daily and complete all assignments on time.<br><br>
+        3. Create a study schedule and stick to it.<br>
+        Plan time for revision, homework, and group discussions.<br><br>
+        4. Monitor your progress regularly.<br>
+        Check your test results and adjust your study methods if needed.
+      </p>
+      <img src="strategic-planning.webp" alt="Goal setting" class="img-fluid my-3">
     </div>
 
+    <!-- Time Tab -->
     <div class="tab-pane fade" id="time">
       <h4>Time Management</h4>
       <ul>
-         <li>Create a realistic study schedule that balances school work, revision, and rest.</li>
-         <li>Prioritize important tasks and complete assignments before deadlines.</li>
-         <li>Minimize distractions such as social media while studying.</li>
-         <li>Track your academic progress and adjust your study plan when necessary.</li>
+        <li>Create a realistic study schedule that balances school work, revision, and rest.</li>
+        <li>Prioritize important tasks and complete assignments before deadlines.</li>
+        <li>Minimize distractions such as social media while studying.</li>
+        <li>Track your academic progress and adjust your study plan when necessary.</li>
       </ul>
-        <!-- Video Embed -->
-  <h5 class="mt-4">Watch this Time Management Video</h5>
-  <div class="video-container">
-    <video controls>
-      <source src="floid.mp4" type="video/mp4">
-      Your browser does not support the video tag. 
-    </video>
+
+      <h5 class="mt-4">Watch this Time Management Video</h5>
+      <div class="video-container mb-4">
+        <video controls>
+          <source src="floid.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+
       <h3>Weekly Timetable</h3>
-<button onclick="toggleTable()">Show/Hide Time Table</button>
+      <button class="btn btn-secondary mb-2" onclick="toggleTable()">Show/Hide Time Table</button>
 
-<table border="1" id="timetable">
-<tr>
-<th>Time</th>
-<th>Mon</th>
-<th>Tue</th>
-<th>Wed</th>
-<th>Thu</th>
-<th>Fri</th>
-<th>Sat</th>
-<th>Sun</th>
-</tr>
+      <table border="1" id="timetable" class="mb-4">
+        <tr>
+          <th>Time</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th><th>Sun</th>
+        </tr>
+        <tr>
+          <td>08:00 - 08:45</td>
+          <td><input type="text" placeholder="Subject"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td><td><input type="text"></td>
+        </tr>
+        <!-- Repeat rows as needed -->
+      </table>
 
-<tr>
-<td>08:00 - 08:45</td>
-<td><input type="text" placeholder="Subject"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td>09:00 - 09:45</td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td>10:00 - 10:45</td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td>11:00 - 11:45</td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-</tr>
-
-<tr>
-<td>01:00 - 01:45</td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-<td><input type="text"></td>
-</tr>
-
-</table>
       <h3>Set a Time Reminder</h3>
-<label for="remindTime">Enter time (HH:MM, 24-hour): </label>
-<input type="time" id="remindTime">
-<button onclick="setReminder()">Set Reminder</button>
+      <label for="remindTime">Enter time (HH:MM, 24-hour): </label>
+      <input type="time" id="remindTime">
+      <button class="btn btn-primary" onclick="setReminder()">Set Reminder</button>
 
-<script>
-function setReminder() {
-  const timeInput = document.getElementById("remindTime").value;
-  if (!timeInput) {
-    alert("Please enter a time first!");
-    return;
-  }
+      <script>
+        function toggleTable() {
+          const table = document.getElementById("timetable");
+          table.style.display = table.style.display === "none" ? "table" : "none";
+        }
 
-  const [hours, minutes] = timeInput.split(":").map(Number);
+        function setReminder() {
+          const timeInput = document.getElementById("remindTime").value;
+          if (!timeInput) { alert("Please enter a time first!"); return; }
+          const [hours, minutes] = timeInput.split(":").map(Number);
+          const intervalId = setInterval(() => {
+            const now = new Date();
+            if (now.getHours() === hours && now.getMinutes() === minutes) {
+              alert("⏰ Time’s up! Check your schedule!");
+              clearInterval(intervalId);
+            }
+          }, 10000);
+          alert("Reminder is set for " + timeInput);
+        }
+      </script>
+    </div>
 
-  function checkTime() {
-    const now = new Date();
-    if (now.getHours() === hours && now.getMinutes() === minutes) {
-      alert("⏰ Time’s up! Check your schedule!");
-      clearInterval(intervalId); // stop checking
-    }
-  }
-
-  const intervalId = setInterval(checkTime, 10000); // check every 10 sec
-  alert("Reminder is set for " + timeInput);
-}
-</script>
-  </div>
-</div>
-
+    <!-- Submit Tab -->
     <div class="tab-pane fade" id="submit">
       <h4>Final Submission</h4>
       <ul>
-       <li>Carefully proofread your work to correct grammar, spelling, and clarity errors.</li>
-       <li>Ensure proper formatting according to the required guidelines (font size, spacing, referencing style).</li>
-       <li>Submit assignments before the deadline to avoid penalties and demonstrate responsibility.</li>
-       <li>Keep a backup copy of your work to prevent loss of important files.</li>
+        <li>Carefully proofread your work to correct grammar, spelling, and clarity errors.</li>
+        <li>Ensure proper formatting according to the required guidelines (font size, spacing, referencing style).</li>
+        <li>Submit assignments before the deadline to avoid penalties and demonstrate responsibility.</li>
+        <li>Keep a backup copy of your work to prevent loss of important files.</li>
       </ul>
     </div>
-
   </div>
 
 </main>
-    
-    <footer>
-        <p>&copy;2026 Floid Sam</p>
-    </footer>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center py-3 mt-5">
+  &copy; 2026 Floid Sam
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
+</html>
 
-<html>    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+ 
 
 
 
