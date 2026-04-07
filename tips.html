@@ -29,7 +29,7 @@
 </head>
 <body>
 
-<!-- NAVBAR (same as index.html) -->
+<!-- Navbar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
   <div class="container">
     <a class="navbar-brand" href="#">Assignment Tracker</a>
@@ -39,22 +39,20 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-        <li class="nav-item"><a class="nav-link active" href="tips.html">Tips</a></li>
-        <li class="nav-item"><a class="nav-link" href="add.html">Add</a></li>
+      <ul class="navbar-nav ms-auto" id="navbar-items">
+        <!-- JS will dynamically insert Login/Sign Up or Welcome/Logout here -->
       </ul>
     </div>
   </div>
 </nav>
 
-<!-- HEADER -->
+<!-- Header -->
 <header class="text-center my-4">
   <h1>Powerful Study Tips</h1>
   <p>Start early, stay consistent, finish strong</p>
 </header>
 
-<!-- MAIN CONTENT -->
+<!-- Main Content -->
 <main class="container mt-5">
 
   <!-- Tabs -->
@@ -160,61 +158,44 @@
 
 </main>
 
-<!-- FOOTER -->
+<!-- Footer -->
 <footer class="bg-dark text-white text-center py-3 mt-5">
   &copy; 2026 Floid Sam
 </footer>
+
+<!-- Dynamic Navbar Script -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("navbar-items");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (currentUser) {
+        navbar.innerHTML = `
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="tips.html">Tips</a></li>
+            <li class="nav-item"><a class="nav-link" href="add.html">Add</a></li>
+            <li class="nav-item"><span class="navbar-text text-white me-2">Welcome, ${currentUser}</span></li>
+            <li class="nav-item"><button class="btn btn-danger" onclick="logout()">Logout</button></li>
+        `;
+    } else {
+        navbar.innerHTML = `
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="tips.html">Tips</a></li>
+            <li class="nav-item"><a class="nav-link" href="add.html">Add</a></li>
+            <li class="nav-item"><a class="btn btn-primary me-2" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="btn btn-success" href="signup.html">Sign Up</a></li>
+        `;
+    }
+});
+
+function logout() {
+    localStorage.removeItem("currentUser");
+    location.reload();
+}
+</script>
 
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
-
- 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
