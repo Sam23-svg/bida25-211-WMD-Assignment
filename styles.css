@@ -120,15 +120,6 @@ iframe, video {
   margin-top: 15px;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: 20px 0;
-  border: 3px solid #3949ab;
-  border-radius: 8px;
-}
-
 
 .card {
   background-color: #ffffff;
