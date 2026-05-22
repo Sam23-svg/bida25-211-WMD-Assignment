@@ -100,5 +100,34 @@ footer{
 <p>&copy; 2026 Floid Sam</p>
 </footer>
 
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+    const navbar = document.getElementById("navbar-items");
+    const currentUser = localStorage.getItem("currentUser");
+
+    if (currentUser) {
+        navbar.innerHTML = `
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+            <li class="nav-item"><a class="nav-link active" href="add.html">Add</a></li>
+            <li class="nav-item"><span class="navbar-text text-white me-2">Welcome, ${currentUser}</span></li>
+            <li class="nav-item"><button class="btn btn-danger" onclick="logout()">Logout</button></li>
+        `;
+    } else {
+        navbar.innerHTML = `
+            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="tips.html">Tips</a></li>
+            <li class="nav-item"><a class="nav-link active" href="add.html">Add</a></li>
+            <li class="nav-item"><a class="btn btn-primary me-2" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="btn btn-success" href="signup.html">Sign Up</a></li>
+        `;
+    }
+});
+
+function logout() {
+    localStorage.removeItem("currentUser");
+    location.reload();
+}
+</script>
 </body>
 </html>
