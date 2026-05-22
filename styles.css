@@ -286,3 +286,15 @@ main a[href^="mailto:"] {
     margin-bottom: 15px;
     color: #0d6efd;
 }
+.video-container video {
+    max-width: 100%;
+    height: auto;
+}
+#timetable {
+    width: 100%;
+    border-collapse: collapse;
+}
+#timetable th, #timetable td {
+    padding: 5px;
+    text-align: center;
+}
