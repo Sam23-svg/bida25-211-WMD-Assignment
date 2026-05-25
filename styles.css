@@ -325,10 +325,3 @@ main a[href^="mailto:"] {
 }
 
 
-footer{
-    background: #212529;
-    color: white;
-    text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
