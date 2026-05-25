@@ -298,3 +298,29 @@ main a[href^="mailto:"] {
     padding: 5px;
     text-align: center;
 }
+
+.contact-header{
+    background: white;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.contact-card{
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    height: 100%;
+}
+
+.contact-form{
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 40px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
